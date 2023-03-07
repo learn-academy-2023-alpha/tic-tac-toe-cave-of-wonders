@@ -34,6 +34,15 @@ When creating a project it is important to think about organization of your code
 
 
 - As a user, when either my partner or I win the game (three squares in a row: horizontally, vertically, or diagonally) I can see a notice telling me which player won.
+-Branch: winner
+- Set conditions for winning the game. (8 potential options) 
+  - hold each winning option in an array. 
+    - These winning options will be the indexes of the matched 3 markers
+- These values will be iterated through usingg a for loop to see if the clicked squares have meet a winning condition.
+- If the have met a winning condition, then they will be passed through a conditoinal statement to very that the winning markers all match.
+- Passes through a conditional statement to notify the players if the game has been won or if the game will continue.
+- Passed the variable for the currenCondition into the App.js return statement, within the reach fragments to dynamically display where the game is currently at. 
+
 - As a user, I can't continue playing the game after the game has been won.
 - As a user, if there are no more squares available, I can see a notice telling me that the game has ended.
 - As a user, I can click on a restart button that will clear the game board.
@@ -56,3 +65,4 @@ When creating a project it is important to think about organization of your code
 
 - [Tic Tac Toe](https://en.wikipedia.org/wiki/Tic-tac-toe)
 - [Tic Tac Toe win condition in React](https://forum.freecodecamp.org/t/need-help-understanding-react-tic-tac-toe-winner-function/137840)
+
