@@ -8,7 +8,9 @@ const App = () => {
   const [nextTurn, setNextTurn] = useState(true);
 
   const handleGamePlay = (index) => {
-    
+    if (squares[index]) {
+      return squares[index];
+    }
         const updatedBoard = squares;
         if (nextTurn) {
             updatedBoard[index] = "❌";
