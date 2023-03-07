@@ -8,7 +8,15 @@ const App = () => {
   return (
     <>
       <h1>Tic Tac Toe</h1>
-      <Square />
+      <div className='game-board'>
+      {squares.map(() => {
+        return (
+          <Square />
+        )
+      })
+      } 
+      </div>
+      
     </>
   )
 }
