@@ -9,7 +9,7 @@ const App = () => {
 
   const handleGamePlay = (index) => {
     if (squares[index]) {
-      return;
+      return squares[index];
     }
         const updatedBoard = squares;
         if (nextTurn) {

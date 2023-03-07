@@ -29,7 +29,7 @@ When creating a project it is important to think about organization of your code
 
 - As a user, I can't click on a square that has already been marked.
     Branch: no-repeat-clicks
-    - Created an if statement to check to if there is already an X or O in that square before it tries to update state
+    - Created an if statement to check to if there is already an X or O in that square before it tries to update state and then returns the index of the clicked square
     - If there is already something in the square, it will not allow you to click on it to update state to change the marker
 
 
