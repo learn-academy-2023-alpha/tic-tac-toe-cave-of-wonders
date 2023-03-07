@@ -5,11 +5,20 @@ import './App.css'
 const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null))
 
+  const [nextTurn, setNextTurn] = useState(true);
+
   const handleGamePlay = (index) => {
-  let updatedBoard = [...squares]
-    updatedBoard[index] = "❌"
-    setSquares(updatedBoard)
-  // alert(index)
+    
+        const updatedBoard = squares;
+        if (nextTurn) {
+            updatedBoard[index] = "❌";
+            setSquares(updatedBoard);
+            setNextTurn(!nextTurn);
+        } else {
+            updatedBoard[index] = '⭕️';
+            setSquares(updatedBoard);
+            setNextTurn(!nextTurn);
+        }
   }
 
   return (
